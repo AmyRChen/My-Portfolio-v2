@@ -7,10 +7,11 @@ module.exports = {
       colors: {
         white: "#F8F3F0",
         black: "#231F1C",
-        "dark-grey": "#404040",
+        content: "#544B43",
         olive: "#999887",
         tea: "#C6BBAF",
-        "deep-white": "E3E0D9",
+        "dark-grey": "#404040",
+        "deep-white": "#E3E0D9",
         "deep-tea": "#B0A69B",
       },
       fontFamily: {
