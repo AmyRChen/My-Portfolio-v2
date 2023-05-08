@@ -21,17 +21,26 @@ const Experience = () => {
             02. <span className="text-black">My Experience</span>
             <div className="border-b-2 border-tea my-5"></div>
           </div>
-          <div className="w-full mx-auto lg:max-w-3xl">
+        </motion.div>
+        <div className="w-full mx-auto lg:max-w-3xl">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
             <div className="relative flex justify-between">
               <div className="flex flex-col items-center w-10 mr-4 md:w-24">
-                <div>
-                  <div className="flex items-center justify-center w-8 h-8 bg-tea rounded-full ">
-                    <img
-                      src="../assets/academic-experience.svg"
-                      alt="academic-experience"
-                      className="w-2/3"
-                    />
-                  </div>
+                <div className="flex items-center justify-center w-8 h-8 bg-tea rounded-full ">
+                  <img
+                    src="../assets/academic-experience.svg"
+                    alt="academic-experience"
+                    className="w-2/3"
+                  />
                 </div>
 
                 <div className="w-px h-full bg-deep-tea "></div>
@@ -42,7 +51,7 @@ const Experience = () => {
                   Jan. 2022 - Apr. 2023
                 </h2>
 
-                <div className="relative flex-1 mb-10 hover:border-b-4 border-2 hover:border-r-4 bg-tea duration-300 border-deep-white hover:shadow-md rounded-3xl">
+                <div className="relative flex-1 mb-10 hover:translate-y-[-5px] duration-300 bg-tea hover:shadow-md rounded-3xl">
                   <div className="relative z-20 p-6">
                     <p className="mb-2 text-xl font-bold font-ubuntu text-black">
                       Computer Programming
@@ -65,17 +74,25 @@ const Experience = () => {
                 </div>
               </div>
             </div>
-
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
             <div className="relative flex justify-between">
               <div className="flex flex-col items-center w-10 mr-4 md:w-24">
-                <div>
-                  <div className="flex items-center justify-center w-8 h-8 bg-light-tea rounded-full ">
-                    <img
-                      src="../assets/work-experience.svg"
-                      alt="work-experience"
-                      className="w-2/3"
-                    />
-                  </div>
+                <div className="flex items-center justify-center w-8 h-8 bg-light-tea rounded-full ">
+                  <img
+                    src="../assets/work-experience.svg"
+                    alt="work-experience"
+                    className="w-2/3"
+                  />
                 </div>
 
                 <div className="w-px h-full bg-deep-tea "></div>
@@ -86,7 +103,7 @@ const Experience = () => {
                   Stp. 2019 - Oct. 2021
                 </h2>
 
-                <div className="relative flex-1 mb-10 hover:border-b-4 border-2 hover:border-r-4 bg-light-tea duration-300 border-deep-white hover:shadow-md rounded-3xl">
+                <div className="relative flex-1 mb-10 hover:translate-y-[-5px] duration-300 bg-light-tea hover:shadow-md rounded-3xl">
                   <div className="relative z-20 p-6">
                     <p className="mb-2 text-xl font-bold font-ubuntu text-black">
                       Business Analyst
@@ -119,17 +136,25 @@ const Experience = () => {
                 </div>
               </div>
             </div>
-
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
             <div className="relative flex justify-between">
               <div className="flex flex-col items-center w-10 mr-4 md:w-24">
-                <div>
-                  <div className="flex items-center justify-center w-8 h-8 bg-light-tea rounded-full ">
-                    <img
-                      src="../assets/work-experience.svg"
-                      alt="work-experience"
-                      className="w-2/3"
-                    />
-                  </div>
+                <div className="flex items-center justify-center w-8 h-8 bg-light-tea rounded-full ">
+                  <img
+                    src="../assets/work-experience.svg"
+                    alt="work-experience"
+                    className="w-2/3"
+                  />
                 </div>
 
                 <div className="w-px h-full bg-deep-tea "></div>
@@ -140,7 +165,7 @@ const Experience = () => {
                   Stp. 2018 - Stp. 2019
                 </h2>
 
-                <div className="relative flex-1 mb-10 hover:border-b-4 border-2 hover:border-r-4 bg-light-tea duration-300 border-deep-white hover:shadow-md rounded-3xl">
+                <div className="relative flex-1 mb-10 hover:translate-y-[-5px] duration-300 bg-light-tea hover:shadow-md rounded-3xl">
                   <div className="relative z-20 p-6">
                     <p className="mb-2 text-xl font-bold font-ubuntu text-black">
                       Auditor
@@ -152,17 +177,25 @@ const Experience = () => {
                 </div>
               </div>
             </div>
-
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
             <div className="relative flex justify-between">
               <div className="flex flex-col items-center w-10 mr-4 md:w-24">
-                <div>
-                  <div className="flex items-center justify-center w-8 h-8 bg-tea rounded-full ">
-                    <img
-                      src="../assets/academic-experience.svg"
-                      alt="academic-experience"
-                      className="w-2/3"
-                    />
-                  </div>
+                <div className="flex items-center justify-center w-8 h-8 bg-tea rounded-full ">
+                  <img
+                    src="../assets/academic-experience.svg"
+                    alt="academic-experience"
+                    className="w-2/3"
+                  />
                 </div>
 
                 <div className="w-px h-full bg-deep-tea "></div>
@@ -173,7 +206,7 @@ const Experience = () => {
                   Spt. 2014 - Jun. 2018
                 </h2>
 
-                <div className="relative flex-1 mb-10 hover:border-b-4 border-2 hover:border-r-4 bg-tea duration-300 border-deep-white hover:shadow-md rounded-3xl">
+                <div className="relative flex-1 mb-10 bg-tea hover:translate-y-[-5px] duration-300 hover:shadow-md rounded-3xl">
                   <div className="relative z-20 p-6">
                     <p className="mb-2 text-xl font-bold font-ubuntu text-black">
                       Honours Bachelor of Accounting
@@ -185,8 +218,8 @@ const Experience = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );

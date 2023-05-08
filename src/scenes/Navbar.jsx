@@ -22,11 +22,14 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isDesktop = useMediaQuery("(min-width: 768px)");
   //CHECK
-  const navbarBackground = isTopOfPage ? "" : " bg-deep-white bg-opacity-50";
+  const navbarBackground = isTopOfPage ? "" : "bg-deep-white bg-opacity-80";
 
   return (
-    <nav className={`${navbarBackground}  z-40 w-full fixed top-0 my-2`}>
-      <div className="flex items-center justify-between mx-auto w-full ">
+    <nav
+      className={`${navbarBackground}  z-40 w-full fixed top-0`}
+      style={{ margin: 0 }}
+    >
+      <div className="flex items-center justify-between mx-auto w-full max-h-[80px]">
         {isDesktop ? (
           <img src="../assets/logo.png" alt="logo" className="w-1/12 mr-9" />
         ) : (
@@ -71,7 +74,9 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
         ) : (
           <button
             className="rounded-full bg-deep-white p-2"
-            onClick={() => setIsMenuToggled(!isMenuToggled)}
+            onClick={() => {
+              setIsMenuToggled(!isMenuToggled);
+            }}
           >
             <img alt="menu-icon" src="../assets/menu-icon.svg" className="" />
           </button>
@@ -79,7 +84,9 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
         {/* MOBILE MENU POPUP */}
         {!isDesktop && isMenuToggled && (
-          <div className="fixed right-0 bottom-0 h-full bg-deep-white w-[250px]">
+          <div
+            className={`fixed right-0 bottom-0 h-full w-[250px] bg-deep-white z-50`}
+          >
             {/* CLOSE ICON */}
             <div className="flex justify-end p-10">
               <button onClick={() => setIsMenuToggled(!isMenuToggled)}>

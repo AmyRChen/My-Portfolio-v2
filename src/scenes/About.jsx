@@ -65,11 +65,11 @@ const About = () => {
         }}
       >
         {isAboveLarge ? (
-          <div className="z-30 w-full max-w-[200px] md:max-w-[400px] rounded-lg overflow-hidden opacity-60 hover:border-b-8 hover:border-r-8 border-olive duration-300 hover:opacity-100">
+          <div className="z-30 w-full max-w-[200px] md:max-w-[400px] rounded-lg overflow-hidden opacity-60 hover:border-b-8 hover:border-r-8 border-olive duration-300 hover:opacity-100 bg-deep-white">
             <img src="../assets/idphoto.jpg" alt="myself" />
           </div>
         ) : (
-          <div className="z-30 my-12 md:my-32  w-full max-w-[300px] md:max-w-[500px] rounded-lg overflow-hidden opacity-60 hover:border-b-8 hover:border-r-8 border-olive duration-300 hover:opacity-100">
+          <div className="z-30 my-12 md:my-32  w-full max-w-[300px] md:max-w-[500px] rounded-lg overflow-hidden opacity-60 hover:border-b-8 hover:border-r-8 border-olive duration-300 hover:opacity-100 bg-deep-white">
             <img src="../assets/idphoto.jpg" alt="myself" />
           </div>
         )}
