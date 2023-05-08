@@ -10,9 +10,11 @@ module.exports = {
         content: "#544B43",
         olive: "#999887",
         tea: "#C6BBAF",
+        grey: "#71756A",
         "dark-grey": "#404040",
         "deep-white": "#E3E0D9",
         "deep-tea": "#B0A69B",
+        "light-tea": "#E3D6C8",
       },
       fontFamily: {
         roboto: ["Roboto Mono", "monospace"],

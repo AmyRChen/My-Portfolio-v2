@@ -22,19 +22,19 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isDesktop = useMediaQuery("(min-width: 768px)");
   //CHECK
-  const navbarBackground = isTopOfPage ? "" : "bg-deep-white opacity-50";
+  const navbarBackground = isTopOfPage ? "" : " bg-deep-white bg-opacity-50";
 
   return (
     <nav className={`${navbarBackground}  z-40 w-full fixed top-0 my-2`}>
-      <div className="flex items-center justify-between mx-auto w-full px-10">
+      <div className="flex items-center justify-between mx-auto w-full ">
         {isDesktop ? (
           <img src="../assets/logo.png" alt="logo" className="w-1/12 mr-9" />
         ) : (
-          <img src="../assets/logo.png" alt="logo" className="w-3/12" />
+          <img src="../assets/logo.png" alt="logo" className="w-2/12" />
         )}
         {/* DESKTOP NAV */}
         {isDesktop ? (
-          <div className="text-dark-grey flex justify-between items-center gap-12 font-roboto text-sm font-semibold mx-6">
+          <div className="text-dark-grey flex justify-between items-center gap-12 font-roboto text-sm font-semibold mx-10 ">
             <Link
               num="01. "
               page="About"
@@ -63,6 +63,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               className=" text-olive font-roboto py-2 px-4 border border-olive hover:border-b-4  duration-300 rounded"
               href="https://google.com"
               target="blank"
+              rel="noreferrer"
             >
               Resume
             </a>
@@ -117,6 +118,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                   className=" text-olive font-roboto py-2 px-4 items-center"
                   href="https://google.com"
                   target="blank"
+                  rel="noreferrer"
                 >
                   Resume
                 </a>
