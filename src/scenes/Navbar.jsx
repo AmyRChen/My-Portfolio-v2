@@ -2,13 +2,11 @@ import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
 
-const Link = ({ num, page, selectedPage, setSelectedPage }) => {
+const Link = ({ num, page, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
   return (
     <AnchorLink
-      className={`${
-        selectedPage === lowerCasePage ? "text-olive" : ""
-      } hover:text-olive duration-300 `}
+      className="hover:text-olive duration-300"
       href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}
     >
@@ -18,10 +16,9 @@ const Link = ({ num, page, selectedPage, setSelectedPage }) => {
   );
 };
 
-const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
+const Navbar = ({ isTopOfPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isDesktop = useMediaQuery("(min-width: 768px)");
-  //CHECK
   const navbarBackground = isTopOfPage ? "" : "bg-deep-white bg-opacity-80";
 
   return (
@@ -38,30 +35,18 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
         {/* DESKTOP NAV */}
         {isDesktop ? (
           <div className="text-dark-grey flex justify-between items-center gap-12 font-roboto text-sm font-semibold mx-10 ">
-            <Link
-              num="01. "
-              page="About"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
+            <Link num="01. " page="About" setSelectedPage={setSelectedPage} />
             <Link
               num="02. "
               page="Experience"
-              selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
               num="03. "
               page="Side Projects"
-              selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
-            <Link
-              num="04. "
-              page="Contact"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
+            <Link num="04. " page="Contact" setSelectedPage={setSelectedPage} />
             <a
               className=" text-olive font-roboto py-2 px-4 border border-olive hover:border-b-4  duration-300 rounded"
               href="https://google.com"
@@ -96,33 +81,26 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
             {/* MENU ITEMS */}
             <div className="flex flex-col gap-10 ml-[20%] text-dark-grey font-roboto font-semibold">
-              <Link
-                num="01. "
-                page="About"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
+              <Link num="01. " page="About" setSelectedPage={setSelectedPage} />
               <Link
                 num="02. "
                 page="Experience"
-                selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
               <Link
                 num="03. "
                 page="Side Projects"
-                selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
               <Link
                 num="04. "
                 page="Contact"
-                selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
               <div className="border-olive hover:border-b-4 duration-300 rounded w-1/2 border flex justify-center">
                 <a
                   className=" text-olive font-roboto py-2 px-4 items-center"
+                  //TODO: update the link
                   href="https://google.com"
                   target="blank"
                   rel="noreferrer"

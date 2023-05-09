@@ -2,11 +2,14 @@ import { motion } from "framer-motion";
 import useMediaQuery from "../hooks/useMediaQuery";
 
 const About = () => {
-  const isAboveLarge = useMediaQuery("(min-width: 1060px)");
+  const isLarger = useMediaQuery("(min-width: 1060px)");
+  const isAboveLarge = useMediaQuery("(min-width: 1400px)");
   return (
     <section
       id="about"
-      className={`md:flex md:justify-between md:items-center gap-16 md:h-full py-10`}
+      className={`md:flex md:justify-between md:items-center gap-16 md:h-full ${
+        isAboveLarge ? "py-32" : "py-10"
+      }`}
     >
       {/* MAIN TEXT */}
       <div className="z-30 basis-3/5 my-12 md:my-32">
@@ -64,7 +67,7 @@ const About = () => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        {isAboveLarge ? (
+        {isLarger ? (
           <div className="z-30 w-full max-w-[200px] md:max-w-[400px] rounded-lg overflow-hidden opacity-60 hover:border-b-8 hover:border-r-8 border-olive duration-300 hover:opacity-100 bg-deep-white">
             <img src="../assets/idphoto.jpg" alt="myself" />
           </div>

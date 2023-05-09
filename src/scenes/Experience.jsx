@@ -4,7 +4,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className={`md:flex md:justify-between md:items-center gap-16 md:h-full py-10`}
+      className={`md:flex md:justify-between md:items-center gap-16 md:h-full py-20`}
     >
       <div className="justify-center max-w-6xl px-4 py-4 mx-auto lg:py-8 md:px-6 z-30">
         <motion.div

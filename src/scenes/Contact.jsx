@@ -44,7 +44,7 @@ const Contact = () => {
               Say Hello
             </a>
           </div>
-          <div className="font-ubuntu text-grey mb-3 text-xs text-centers text-center mt-52">
+          <div className="font-ubuntu text-grey mb-3 text-xs text-centers text-center mt-44">
             Design & Built by PingJu Amy Chen
           </div>
         </motion.div>

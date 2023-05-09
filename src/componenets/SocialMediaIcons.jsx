@@ -1,10 +1,10 @@
 const SocialMediaIcons = () => {
   return (
     <>
-      <div className="fixed bottom-0 left-0 flex flex-col gap-7 mt-5 mx-10 z-40">
+      <div className="fixed bottom-0 right-0 flex flex-col gap-7 mt-5 mx-3 z-40">
         <a
           className="hover:opacity-50 hover:translate-y-[-5px] duration-300 w-1/2"
-          href="https://google.com" //TODO
+          href="https://www.linkedin.com/in/amy-chen-6827531aa/"
           target="blank"
           rel="noreferrer"
         >
@@ -13,7 +13,7 @@ const SocialMediaIcons = () => {
 
         <a
           className="hover:opacity-50 hover:translate-y-[-5px] duration-300 w-1/2"
-          href="https://" //TODO
+          href="https://github.com/AmyRChen"
           target="blank"
           rel="noreferrer"
         >
@@ -22,7 +22,7 @@ const SocialMediaIcons = () => {
 
         <a
           className="hover:opacity-50 hover:translate-y-[-5px] duration-300 w-1/2"
-          href="https://" //TODO
+          href="https://www.instagram.com/chenpr/"
           target="blank"
           rel="noreferrer"
         >
