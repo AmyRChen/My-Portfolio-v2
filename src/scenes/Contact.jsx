@@ -1,9 +1,6 @@
 import { motion } from "framer-motion";
-import useMediaQuery from "../hooks/useMediaQuery";
 
 const Contact = () => {
-  const isAboveLarge = useMediaQuery("(min-width: 1060px)");
-
   return (
     <section
       id="contact"
