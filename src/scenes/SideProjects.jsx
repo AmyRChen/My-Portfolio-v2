@@ -380,14 +380,14 @@ const SideProjects = () => {
           )}
           {moreProject ? (
             <button
-              className="font-roboto py-2 px-4 border border-olive hover:border-b-4  duration-300 rounded text-base my-5"
+              className="font-roboto py-2 px-4 border border-olive hover:border-b-4 duration-300 rounded text-base my-5"
               onClick={showProjectClick}
             >
               Show Less
             </button>
           ) : (
             <button
-              className="font-roboto py-2 px-4 border border-olive hover:border-b-4  duration-300 rounded text-base my-5"
+              className="font-roboto py-2 px-4 border border-olive hover:border-b-4 duration-300 rounded text-base my-5"
               onClick={showProjectClick}
             >
               Show More

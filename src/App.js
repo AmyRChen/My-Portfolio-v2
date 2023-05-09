@@ -7,12 +7,13 @@ import Landing from "./scenes/Landing";
 import About from "./scenes/About";
 import Experience from "./scenes/Experience";
 import SideProjects from "./scenes/SideProjects";
+import Contact from "./scenes/Contact";
 
 function App() {
-  const [selectedPage, setSelectedPage] = useState("home");
+  const [selectedPage, setSelectedPage] = useState("landing");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
-  const isDesktop = useMediaQuery("(min-width: 1060px)");
-  const isLargerScreen = useMediaQuery("(min-width: 480px)");
+  const isLarger = useMediaQuery("(min-width: 1400px)");
+  const isNotMobile = useMediaQuery("(min-width: 480px)");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,8 +34,12 @@ function App() {
         setSelectedPage={setSelectedPage}
       />
 
-      <div className="w-5/6 mx-auto md:h-full">
-        {isLargerScreen && <SocialMediaIcons />}
+      <div
+        className={`${
+          isLarger ? "flex justify-center items-center" : "w-5/6"
+        } mx-auto md:h-full`}
+      >
+        {isNotMobile && <SocialMediaIcons />}
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
@@ -70,6 +75,15 @@ function App() {
         >
           <SideProjects />
         </motion.div>
+        <div className="flex justify-center items-center mx-auto md:h-full">
+          <motion.div
+            margin="0 0 -200px 0"
+            amount="all"
+            onViewportEnter={() => setSelectedPage("contact")}
+          >
+            <Contact />
+          </motion.div>
+        </div>
       </div>
     </div>
   );

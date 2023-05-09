@@ -1,7 +1,7 @@
 const SocialMediaIcons = () => {
   return (
     <>
-      <div className="absolute bottom-0 left-0 flex flex-col gap-7 justify-end mt-5 mx-10">
+      <div className="fixed bottom-0 left-0 flex flex-col gap-7 mt-5 mx-10 z-40">
         <a
           className="hover:opacity-50 hover:translate-y-[-5px] duration-300 w-1/2"
           href="https://google.com" //TODO

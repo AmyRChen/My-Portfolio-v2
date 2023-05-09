@@ -6,7 +6,7 @@ const Landing = () => {
   const largerMargin = isAboveLarge ? "py-28" : "";
   return (
     <section
-      // id="home"
+      id="landing"
       className={`md:flex gap-16 md:h-full md:w-full py-8 flex justify-center items-center md:justify-center md:items-center ${largerMargin}`}
     >
       {/* MAIN TEXT */}

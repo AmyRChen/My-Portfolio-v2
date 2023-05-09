@@ -17,7 +17,7 @@ const Experience = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <div className="font-roboto text-olive mb-2 text-2xl">
+          <div className="font-roboto text-olive mb-2 text-2xl text-center">
             02. <span className="text-black">My Experience</span>
             <div className="border-b-2 border-tea my-5"></div>
           </div>
