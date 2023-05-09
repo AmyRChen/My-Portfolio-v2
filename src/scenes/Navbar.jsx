@@ -49,7 +49,7 @@ const Navbar = ({ isTopOfPage, setSelectedPage }) => {
             <Link num="04. " page="Contact" setSelectedPage={setSelectedPage} />
             <a
               className=" text-olive font-roboto py-2 px-4 border border-olive hover:border-b-4  duration-300 rounded"
-              href="https://google.com"
+              href="https://drive.google.com/file/d/1EljSTRLHjyAZ-T4ecftZ1rdGLuwoq8MK/view?usp=sharing"
               target="blank"
               rel="noreferrer"
             >
@@ -100,8 +100,7 @@ const Navbar = ({ isTopOfPage, setSelectedPage }) => {
               <div className="border-olive hover:border-b-4 duration-300 rounded w-1/2 border flex justify-center">
                 <a
                   className=" text-olive font-roboto py-2 px-4 items-center"
-                  //TODO: update the link
-                  href="https://google.com"
+                  href="https://drive.google.com/file/d/1EljSTRLHjyAZ-T4ecftZ1rdGLuwoq8MK/view?usp=sharing"
                   target="blank"
                   rel="noreferrer"
                 >
