@@ -59,7 +59,7 @@ const SideProjects = () => {
                 {/* PRODUCTION LINK*/}
                 <a
                   className="bg-deep-white rounded-full w-8 h-8 p-1 ml-5 hover:bg-tea duration-300"
-                  href="http://"
+                  href="https://socailmedia-frontend.onrender.com/"
                   target="blank"
                 >
                   <img src="../assets/open-link.svg" alt="open-link" />
@@ -67,7 +67,7 @@ const SideProjects = () => {
                 {/* GITHUB LINK*/}
                 <a
                   className="bg-deep-white rounded-full w-8 h-8 p-1 ml-3 hover:bg-tea duration-300"
-                  href="http://"
+                  href="https://github.com/AmyRChen/MERN-SocialMedia"
                   target="blank"
                 >
                   <img src="../assets/github.png" alt="open-link" />
@@ -118,7 +118,7 @@ const SideProjects = () => {
                 {/* PRODUCTION LINK*/}
                 <a
                   className="bg-deep-white rounded-full w-8 h-8 p-1 ml-5 hover:bg-tea duration-300"
-                  href="http://"
+                  href="https://web-422-a6-client.vercel.app/"
                   target="blank"
                 >
                   <img src="../assets/open-link.svg" alt="open-link" />
@@ -126,7 +126,7 @@ const SideProjects = () => {
                 {/* GITHUB LINK*/}
                 <a
                   className="bg-deep-white rounded-full w-8 h-8 p-1 ml-3 hover:bg-tea duration-300"
-                  href="http://"
+                  href="https://github.com/AmyRChen/The-MET-client"
                   target="blank"
                 >
                   <img src="../assets/github.png" alt="open-link" />
@@ -193,7 +193,7 @@ const SideProjects = () => {
                 {/* PRODUCTION LINK*/}
                 <a
                   className="bg-deep-white rounded-full w-8 h-8 p-1 ml-5 hover:bg-tea duration-300"
-                  href="http://"
+                  href="https://chat-app-frontend-i0y4.onrender.com/"
                   target="blank"
                 >
                   <img src="../assets/open-link.svg" alt="open-link" />
@@ -201,7 +201,7 @@ const SideProjects = () => {
                 {/* GITHUB LINK*/}
                 <a
                   className="bg-deep-white rounded-full w-8 h-8 p-1 ml-3 hover:bg-tea duration-300"
-                  href="http://"
+                  href="https://github.com/AmyRChen/Chat-App-withChatGPT"
                   target="blank"
                 >
                   <img src="../assets/github.png" alt="open-link" />
@@ -271,7 +271,7 @@ const SideProjects = () => {
                         {/* PRODUCTION LINK*/}
                         <a
                           className="bg-tea rounded-full w-8 h-8 p-1 hover:bg-deep-tea duration-300"
-                          href="http://"
+                          href="https://react-dance-studio-app-amyrchen.vercel.app/"
                           target="blank"
                         >
                           <img src="../assets/open-link.svg" alt="open-link" />
@@ -279,7 +279,7 @@ const SideProjects = () => {
                         {/* GITHUB LINK*/}
                         <a
                           className="bg-tea rounded-full w-8 h-8 p-1 ml-3 hover:bg-deep-tea duration-300"
-                          href="http://"
+                          href="https://github.com/AmyRChen/React-Dance-Studio"
                           target="blank"
                         >
                           <img src="../assets/github.png" alt="open-link" />
@@ -304,7 +304,7 @@ const SideProjects = () => {
                         {/* GITHUB LINK*/}
                         <a
                           className="bg-tea rounded-full w-8 h-8 p-1 ml-3 hover:bg-deep-tea duration-300"
-                          href="http://"
+                          href="https://github.com/AmyRChen/Weather-App"
                           target="blank"
                         >
                           <img src="../assets/github.png" alt="open-link" />
@@ -331,7 +331,7 @@ const SideProjects = () => {
                         {/* PRODUCTION LINK*/}
                         <a
                           className="bg-tea rounded-full w-8 h-8 p-1 hover:bg-deep-tea duration-300"
-                          href="http://"
+                          href="https://tense-pink-top-coat.cyclic.app/blog"
                           target="blank"
                         >
                           <img src="../assets/open-link.svg" alt="open-link" />
@@ -339,7 +339,7 @@ const SideProjects = () => {
                         {/* GITHUB LINK*/}
                         <a
                           className="bg-tea rounded-full w-8 h-8 p-1 ml-3 hover:bg-deep-tea duration-300"
-                          href="http://"
+                          href="https://github.com/AmyRChen/WebApp-MyBlog"
                           target="blank"
                         >
                           <img src="../assets/github.png" alt="open-link" />
@@ -366,7 +366,7 @@ const SideProjects = () => {
                         {/* GITHUB LINK*/}
                         <a
                           className="bg-tea rounded-full w-8 h-8 p-1 ml-3 hover:bg-deep-tea duration-300"
-                          href="http://"
+                          href="https://github.com/AmyRChen/MovieAPI"
                           target="blank"
                         >
                           <img src="../assets/github.png" alt="open-link" />
