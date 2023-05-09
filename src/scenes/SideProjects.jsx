@@ -1,8 +1,19 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 
 const SideProjects = () => {
   const isSmallerScreen = useMediaQuery("(min-width: 768px)");
+  const [moreProject, setMoreProject] = useState(false);
+
+  async function showProjectClick(e) {
+    if (moreProject) {
+      setMoreProject(false);
+    } else {
+      setMoreProject(true);
+    }
+  }
+
   return (
     <section
       id="sideProjects"
@@ -214,7 +225,7 @@ const SideProjects = () => {
             </div>
           </div>
         </motion.div>
-        {/* Other more */}
+        {/* Other more - title and button*/}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -229,138 +240,160 @@ const SideProjects = () => {
             Explore more side projects
           </div>
         </motion.div>
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 },
-          }}
-        >
-          <div class="flex flex-wrap justify-center mt-10">
-            {/* project1 */}
-            <div class="p-4 max-w-xs hover:translate-y-[-5px] duration-300">
-              <div class="flex rounded-lg h-full bg-deep-white p-8 flex-col">
-                <div class="flex items-center mb-3 text-black text-lg font-medium font-ubuntu">
-                  AC Dance Studio
-                </div>
-                <div class="flex flex-col justify-between flex-grow">
-                  <p class="leading-relaxed text-base text-grey font-ubuntu">
-                    This is a website for a dance studio that I built to learn
-                    Tailwind CSS. As a dance enthusiast, I came up with the idea
-                    of creating a static website to introduce the dance studio
-                    to others.
-                  </p>
-                  <div className="flex flex-row justify-end mt-3">
-                    {/* PRODUCTION LINK*/}
-                    <a
-                      className="bg-tea rounded-full w-8 h-8 p-1 hover:bg-deep-tea duration-300"
-                      href="http://"
-                      target="blank"
-                    >
-                      <img src="../assets/open-link.svg" alt="open-link" />
-                    </a>
-                    {/* GITHUB LINK*/}
-                    <a
-                      className="bg-tea rounded-full w-8 h-8 p-1 ml-3 hover:bg-deep-tea duration-300"
-                      href="http://"
-                      target="blank"
-                    >
-                      <img src="../assets/github.png" alt="open-link" />
-                    </a>
+        {/* Other more - projects*/}
+        <div className="flex flex-col items-center">
+          {moreProject && (
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+            >
+              <div class="flex flex-wrap justify-center mt-10">
+                {/* project1 */}
+                <div class="p-4 max-w-xs hover:translate-y-[-5px] duration-300">
+                  <div class="flex rounded-lg h-full bg-deep-white p-8 flex-col">
+                    <div class="flex items-center mb-3 text-black text-lg font-medium font-ubuntu">
+                      AC Dance Studio
+                    </div>
+                    <div class="flex flex-col justify-between flex-grow">
+                      <p class="leading-relaxed text-base text-grey font-ubuntu">
+                        This is a website for a dance studio that I built to
+                        learn Tailwind CSS. As a dance enthusiast, I came up
+                        with the idea of creating a static website to introduce
+                        the dance studio to others.
+                      </p>
+                      <div className="flex flex-row justify-end mt-3">
+                        {/* PRODUCTION LINK*/}
+                        <a
+                          className="bg-tea rounded-full w-8 h-8 p-1 hover:bg-deep-tea duration-300"
+                          href="http://"
+                          target="blank"
+                        >
+                          <img src="../assets/open-link.svg" alt="open-link" />
+                        </a>
+                        {/* GITHUB LINK*/}
+                        <a
+                          className="bg-tea rounded-full w-8 h-8 p-1 ml-3 hover:bg-deep-tea duration-300"
+                          href="http://"
+                          target="blank"
+                        >
+                          <img src="../assets/github.png" alt="open-link" />
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            {/* project2 */}
-            <div class="p-4 max-w-xs hover:translate-y-[-5px] duration-300">
-              <div class="flex rounded-lg h-full bg-deep-white p-8 flex-col">
-                <div class="flex items-center mb-3 text-black text-lg font-medium font-ubuntu">
-                  Today's Weather
-                </div>
-                <div class="flex flex-col justify-between flex-grow">
-                  <p class="leading-relaxed text-base text-grey font-ubuntu">
-                    This is a cute weather application that displays the
-                    real-time weather for the location that the user searches
-                    for.
-                  </p>
-                  <div className="flex flex-row justify-end mt-3">
-                    {/* GITHUB LINK*/}
-                    <a
-                      className="bg-tea rounded-full w-8 h-8 p-1 ml-3 hover:bg-deep-tea duration-300"
-                      href="http://"
-                      target="blank"
-                    >
-                      <img src="../assets/github.png" alt="open-link" />
-                    </a>
+                {/* project2 */}
+                <div class="p-4 max-w-xs hover:translate-y-[-5px] duration-300">
+                  <div class="flex rounded-lg h-full bg-deep-white p-8 flex-col">
+                    <div class="flex items-center mb-3 text-black text-lg font-medium font-ubuntu">
+                      Today's Weather
+                    </div>
+                    <div class="flex flex-col justify-between flex-grow">
+                      <p class="leading-relaxed text-base text-grey font-ubuntu">
+                        This is a cute weather application that displays the
+                        real-time weather for the location that the user
+                        searches for.
+                      </p>
+                      <div className="flex flex-row justify-end mt-3">
+                        {/* GITHUB LINK*/}
+                        <a
+                          className="bg-tea rounded-full w-8 h-8 p-1 ml-3 hover:bg-deep-tea duration-300"
+                          href="http://"
+                          target="blank"
+                        >
+                          <img src="../assets/github.png" alt="open-link" />
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            {/* project3 */}
-            <div class="p-4 max-w-xs hover:translate-y-[-5px] duration-300">
-              <div class="flex rounded-lg h-full bg-deep-white p-8 flex-col">
-                <div class="flex items-center mb-3 text-black text-lg font-medium font-ubuntu">
-                  My Blog
-                </div>
-                <div class="flex flex-col justify-between flex-grow">
-                  <p class="leading-relaxed text-base text-grey font-ubuntu">
-                    As someone who enjoys sharing my thoughts and experiences, I
-                    built this application to learn how to implement
-                    authentication and authorization features. The blog allows
-                    users to create, read, update, and delete posts and images.
-                  </p>
-                  <div className="flex flex-row justify-end mt-3">
-                    {/* PRODUCTION LINK*/}
-                    <a
-                      className="bg-tea rounded-full w-8 h-8 p-1 hover:bg-deep-tea duration-300"
-                      href="http://"
-                      target="blank"
-                    >
-                      <img src="../assets/open-link.svg" alt="open-link" />
-                    </a>
-                    {/* GITHUB LINK*/}
-                    <a
-                      className="bg-tea rounded-full w-8 h-8 p-1 ml-3 hover:bg-deep-tea duration-300"
-                      href="http://"
-                      target="blank"
-                    >
-                      <img src="../assets/github.png" alt="open-link" />
-                    </a>
+                {/* project3 */}
+                <div class="p-4 max-w-xs hover:translate-y-[-5px] duration-300">
+                  <div class="flex rounded-lg h-full bg-deep-white p-8 flex-col">
+                    <div class="flex items-center mb-3 text-black text-lg font-medium font-ubuntu">
+                      My Blog
+                    </div>
+                    <div class="flex flex-col justify-between flex-grow">
+                      <p class="leading-relaxed text-base text-grey font-ubuntu">
+                        As someone who enjoys sharing my thoughts and
+                        experiences, I built this application to learn how to
+                        implement authentication and authorization features. The
+                        blog allows users to create, read, update, and delete
+                        posts and images.
+                      </p>
+                      <div className="flex flex-row justify-end mt-3">
+                        {/* PRODUCTION LINK*/}
+                        <a
+                          className="bg-tea rounded-full w-8 h-8 p-1 hover:bg-deep-tea duration-300"
+                          href="http://"
+                          target="blank"
+                        >
+                          <img src="../assets/open-link.svg" alt="open-link" />
+                        </a>
+                        {/* GITHUB LINK*/}
+                        <a
+                          className="bg-tea rounded-full w-8 h-8 p-1 ml-3 hover:bg-deep-tea duration-300"
+                          href="http://"
+                          target="blank"
+                        >
+                          <img src="../assets/github.png" alt="open-link" />
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
 
-            {/* project4 */}
-            <div class="p-4 max-w-xs hover:translate-y-[-5px] duration-300">
-              <div class="flex rounded-lg h-full bg-deep-white p-8 flex-col">
-                <div class="flex items-center mb-3 text-black text-lg font-medium font-ubuntu">
-                  Movie API
-                </div>
-                <div class="flex flex-col justify-between flex-grow">
-                  <p class="leading-relaxed text-base text-grey font-ubuntu">
-                    During my web courses, I learned how to set up an API for
-                    the front-end. This API retrieves sample movie data from
-                    MongoDB, which programmers can use in their projects.
-                  </p>
-                  <div className="flex flex-row justify-end mt-3">
-                    {/* GITHUB LINK*/}
-                    <a
-                      className="bg-tea rounded-full w-8 h-8 p-1 ml-3 hover:bg-deep-tea duration-300"
-                      href="http://"
-                      target="blank"
-                    >
-                      <img src="../assets/github.png" alt="open-link" />
-                    </a>
+                {/* project4 */}
+                <div class="p-4 max-w-xs hover:translate-y-[-5px] duration-300">
+                  <div class="flex rounded-lg h-full bg-deep-white p-8 flex-col">
+                    <div class="flex items-center mb-3 text-black text-lg font-medium font-ubuntu">
+                      Movie API
+                    </div>
+                    <div class="flex flex-col justify-between flex-grow">
+                      <p class="leading-relaxed text-base text-grey font-ubuntu">
+                        During my web courses, I learned how to set up an API
+                        for the front-end. This API retrieves sample movie data
+                        from MongoDB, which programmers can use in their
+                        projects.
+                      </p>
+                      <div className="flex flex-row justify-end mt-3">
+                        {/* GITHUB LINK*/}
+                        <a
+                          className="bg-tea rounded-full w-8 h-8 p-1 ml-3 hover:bg-deep-tea duration-300"
+                          href="http://"
+                          target="blank"
+                        >
+                          <img src="../assets/github.png" alt="open-link" />
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </motion.div>
+            </motion.div>
+          )}
+          {moreProject ? (
+            <button
+              className="font-roboto py-2 px-4 border border-olive hover:border-b-4  duration-300 rounded text-base my-5"
+              onClick={showProjectClick}
+            >
+              Show Less
+            </button>
+          ) : (
+            <button
+              className="font-roboto py-2 px-4 border border-olive hover:border-b-4  duration-300 rounded text-base my-5"
+              onClick={showProjectClick}
+            >
+              Show More
+            </button>
+          )}
+        </div>
       </div>
     </section>
   );
