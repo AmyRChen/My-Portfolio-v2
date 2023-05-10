@@ -29,7 +29,7 @@ const SocialMediaIcons = () => {
           <img alt="instagram-link" src="../assets/instagram.png" />
         </a>
 
-        <div className="ml-2.5 bottom-0 h-[100px] border-l border-black justify-center items-center"></div>
+        <div className="ml-2.5 bottom-0 h-[100px] border-l border-olive justify-center items-center"></div>
       </div>
     </>
   );
