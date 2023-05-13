@@ -41,10 +41,8 @@ const SideProjects = () => {
           <div className="flex justify-center items-center mt-12 mb-24">
             {/* IMAGE */}
             {isSmallerScreen && (
-              <div className="bg-deep-white rounded-lg overflow-hidden">
-                <div className="opacity-tea opacity-40 hover:opacity-90 duration-300">
-                  <img src="../assets/project1.jpg" alt="project1" />
-                </div>
+              <div className="rounded-lg overflow-hidden hover:translate-y-[-5px] duration-300">
+                <img src="../assets/project1.jpg" alt="project1" />
               </div>
             )}
 
@@ -153,10 +151,8 @@ const SideProjects = () => {
             </div>
             {/* IMAGE */}
             {isSmallerScreen && (
-              <div className="bg-deep-white rounded-lg overflow-hidden">
-                <div className="opacity-tea opacity-40 hover:opacity-90 duration-300">
-                  <img src="../assets/project3.jpg" alt="project2" />
-                </div>
+              <div className="rounded-lg overflow-hidden hover:translate-y-[-5px] duration-300">
+                <img src="../assets/project3.jpg" alt="project2" />
               </div>
             )}
           </div>
@@ -175,10 +171,8 @@ const SideProjects = () => {
           <div className="flex justify-center items-center mt-12 mb-24">
             {/* IMAGE */}
             {isSmallerScreen && (
-              <div className="bg-deep-white rounded-lg overflow-hidden">
-                <div className="opacity-tea opacity-40 hover:opacity-90 duration-300">
-                  <img src="../assets/project2.jpg" alt="project3" />
-                </div>
+              <div className="rounded-lg overflow-hidden hover:translate-y-[-5px] duration-300">
+                <img src="../assets/project2.jpg" alt="project3" />
               </div>
             )}
 
