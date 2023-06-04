@@ -258,17 +258,17 @@ const SideProjects = () => {
                     </div>
                     <div class="flex flex-col justify-between flex-grow">
                       <p class="leading-relaxed text-base text-grey font-ubuntu">
-                        It's my first time integrating with Google Maps APIs,
-                        and I'm excited to learn! This application is designed
-                        for location search, allowing users to access their
-                        current location and search for any place on Google
-                        Maps. Happy exploring!
+                        It's my first time using Vue.js and integrating with
+                        Google Maps APIs, and I'm excited to learn! This
+                        application is designed for location search, allowing
+                        users to access their current location and search for
+                        any place on Google Maps. Happy exploring!
                       </p>
                       <div className="flex flex-row justify-end mt-3">
                         {/* PRODUCTION LINK*/}
                         <a
                           className="bg-tea rounded-full w-8 h-8 p-1 hover:bg-deep-tea duration-300"
-                          href="https://react-dance-studio-app-amyrchen.vercel.app/"
+                          href="https://vue-map-app.onrender.com"
                           target="blank"
                         >
                           <img src="../assets/open-link.svg" alt="open-link" />
@@ -276,7 +276,7 @@ const SideProjects = () => {
                         {/* GITHUB LINK*/}
                         <a
                           className="bg-tea rounded-full w-8 h-8 p-1 ml-3 hover:bg-deep-tea duration-300"
-                          href="https://github.com/AmyRChen/React-Dance-Studio"
+                          href="https://github.com/AmyRChen/vue-map-app"
                           target="blank"
                         >
                           <img src="../assets/github.png" alt="open-link" />
