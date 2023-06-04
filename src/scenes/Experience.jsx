@@ -50,25 +50,25 @@ const Experience = () => {
                 <h2 className="inline-block px-4 py-2 mb-4 text-xs font-medium font-ubuntu text-black bg-tea rounded-full">
                   Jan. 2022 - Apr. 2023
                 </h2>
+                <div className="relative z-20 p-6 flex-1 mb-10 hover:translate-y-[-5px] duration-300 bg-tea hover:shadow-md rounded-3xl">
+                  <p className="mb-2 text-xl font-bold font-ubuntu text-black">
+                    Computer Programming
+                  </p>
+                  <p className="mb-2 text-base font-bold font-ubuntu text-dark-grey">
+                    Seneca College
+                  </p>
 
-                <div className="relative flex-1 mb-10 hover:translate-y-[-5px] duration-300 bg-tea hover:shadow-md rounded-3xl">
-                  <div className="relative z-20 p-6">
-                    <p className="mb-2 text-xl font-bold font-ubuntu text-black">
-                      Computer Programming
-                    </p>
-                    <p className="mb-2 text-base font-bold font-ubuntu text-dark-grey">
-                      Seneca College
-                    </p>
-                    <p className="text-dark-grey font-ubuntu">
+                  <div className="text-dark-grey font-ubuntu">
+                    <p>
                       The program equipped me with practical programming skills
                       and prepared me well for a career in the technology
                       fields. I worked on real-world projects, collaborated with
                       peers, and received mentorship from experienced faculty
                       members.
                     </p>
-                    <ul className="text-dark-grey font-ubuntu list-disc ml-4 mt-3">
+                    <ul className="list-disc ml-4 mt-3">
                       <li className="my-1">GPA: 4.0/4.0</li>
-                      <li>Named to President's Honor List</li>
+                      <li>Achieved President's Honour List.</li>
                     </ul>
                   </div>
                 </div>
@@ -103,33 +103,43 @@ const Experience = () => {
                   Stp. 2019 - Oct. 2021
                 </h2>
 
-                <div className="relative flex-1 mb-10 hover:translate-y-[-5px] duration-300 bg-light-tea hover:shadow-md rounded-3xl">
-                  <div className="relative z-20 p-6">
-                    <p className="mb-2 text-xl font-bold font-ubuntu text-black">
-                      Business Analyst
+                <div className="relative z-20 p-6 flex-1 mb-10 hover:translate-y-[-5px] duration-300 bg-light-tea hover:shadow-md rounded-3xl">
+                  <p className="mb-2 text-xl font-bold font-ubuntu text-black">
+                    Business Analyst
+                  </p>
+                  <p className="mb-2 text-base font-bold font-ubuntu text-dark-grey">
+                    Deloitte, Taiwan
+                  </p>
+                  <div className="text-dark-grey font-ubuntu">
+                    <p>
+                      I made a leap into the system development world by joining
+                      Information Technology department. As a business analyst,
+                      I successfully transformed business requirements into
+                      actionable insights and collaborated closely with
+                      stakeholders to pioneer internal projects. It was during
+                      this time that my passion for product development grew.
                     </p>
-                    <p className="mb-2 text-base font-bold font-ubuntu text-dark-grey">
-                      Deloitte, Taiwan
-                    </p>
-                    <ul className="text-dark-grey font-ubuntu list-disc ml-4 mt-3">
+                    <ul className="list-disc ml-4 mt-3">
                       <li className="my-2">
-                        Consulted with audit team, developed a financial
-                        reporting system that automated processes and improved
-                        efficiency by 83% during digital transformation.
+                        Collaborated closely with the Audit & Assurance (A&A)
+                        department and Quality & Risk Management (QRM) team
+                        throughout the digital transformation.
                       </li>
                       <li className="my-2">
-                        Coordinated with A&A department during digital
-                        transformation, developed more than 8 projects using
-                        SDLC and Agile models, executed System Integration
-                        Testing (SIT), and provided system support and training.
+                        Analyzed business requirements and closely cooperated
+                        with stakeholders to pioneer the implementation of over
+                        8 internal systems, applying the software development
+                        lifecycle (SDLC) and Agile development process. This
+                        resulted in an impressive average improvement of 79% in
+                        the original processes.
                       </li>
                       <li className="my-2">
-                        Launched and planned Workload Management System for QRM
-                        department reducing budget control process time by 120%.
-                      </li>
-                      <li>
-                        Executed data migration for 7 scopes and ensured data
-                        integrity for Deloitte globalized system.
+                        Collaborated closely with Deloitte Global teams (UK,
+                        Australia, India, US, Greece, etc.) and spearheaded data
+                        migration for the globalized system, SWIFT. Implemented
+                        a comprehensive data mapping strategy, reducing data
+                        migration time by 30% and ensuring compliance with
+                        regulations.
                       </li>
                     </ul>
                   </div>
@@ -165,15 +175,13 @@ const Experience = () => {
                   Stp. 2018 - Stp. 2019
                 </h2>
 
-                <div className="relative flex-1 mb-10 hover:translate-y-[-5px] duration-300 bg-light-tea hover:shadow-md rounded-3xl">
-                  <div className="relative z-20 p-6">
-                    <p className="mb-2 text-xl font-bold font-ubuntu text-black">
-                      Auditor
-                    </p>
-                    <p className=" text-base font-bold font-ubuntu text-dark-grey">
-                      Deloitte, Taiwan
-                    </p>
-                  </div>
+                <div className="relative z-20 p-6 flex-1 mb-10 hover:translate-y-[-5px] duration-300 bg-light-tea hover:shadow-md rounded-3xl">
+                  <p className="mb-2 text-xl font-bold font-ubuntu text-black">
+                    Auditor
+                  </p>
+                  <p className=" text-base font-bold font-ubuntu text-dark-grey">
+                    Deloitte, Taiwan
+                  </p>
                 </div>
               </div>
             </div>
@@ -206,15 +214,13 @@ const Experience = () => {
                   Spt. 2014 - Jun. 2018
                 </h2>
 
-                <div className="relative flex-1 mb-10 bg-tea hover:translate-y-[-5px] duration-300 hover:shadow-md rounded-3xl">
-                  <div className="relative z-20 p-6">
-                    <p className="mb-2 text-xl font-bold font-ubuntu text-black">
-                      Honours Bachelor of Accounting
-                    </p>
-                    <p className="text-base font-bold font-ubuntu text-dark-grey">
-                      Ming Chuan University, Taiwan
-                    </p>
-                  </div>
+                <div className="relative z-20 p-6 flex-1 mb-10 bg-tea hover:translate-y-[-5px] duration-300 hover:shadow-md rounded-3xl">
+                  <p className="mb-2 text-xl font-bold font-ubuntu text-black">
+                    Honours Bachelor of Accounting
+                  </p>
+                  <p className="text-base font-bold font-ubuntu text-dark-grey">
+                    Ming Chuan University, Taiwan
+                  </p>
                 </div>
               </div>
             </div>

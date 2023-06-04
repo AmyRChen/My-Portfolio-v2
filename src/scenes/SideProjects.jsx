@@ -86,6 +86,7 @@ const SideProjects = () => {
                 <p className="mx-2">MongoDB</p>
                 <p className="mx-2">Express.js</p>
                 <p className="mx-2">React</p>
+                <p className="mx-2">Redux</p>
                 <p className="mx-2">Node.js</p>
               </div>
             </div>
@@ -212,6 +213,7 @@ const SideProjects = () => {
               </div>
               <div className="bg-deep-white rounded-full overflow-hidden p-2 text-sm flex">
                 <p className="mx-2">React</p>
+                <p className="mx-2">Redux</p>
                 <p className="mx-2">OpenAI API</p>
                 <p className="mx-2">Node.js</p>
                 <p className="mx-2">Express.js</p>
