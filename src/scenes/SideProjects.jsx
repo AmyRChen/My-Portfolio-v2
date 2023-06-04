@@ -250,7 +250,43 @@ const SideProjects = () => {
               }}
             >
               <div class="flex flex-wrap justify-center mt-10">
-                {/* project1 */}
+                {/* project2 */}
+                <div class="p-4 max-w-xs hover:translate-y-[-5px] duration-300">
+                  <div class="flex rounded-lg h-full bg-deep-white p-8 flex-col">
+                    <div class="flex items-center mb-3 text-black text-lg font-medium font-ubuntu">
+                      Where Am I? Location Search
+                    </div>
+                    <div class="flex flex-col justify-between flex-grow">
+                      <p class="leading-relaxed text-base text-grey font-ubuntu">
+                        It's my first time integrating with Google Maps APIs,
+                        and I'm excited to learn! This application is designed
+                        for location search, allowing users to access their
+                        current location and search for any place on Google
+                        Maps. Happy exploring!
+                      </p>
+                      <div className="flex flex-row justify-end mt-3">
+                        {/* PRODUCTION LINK*/}
+                        <a
+                          className="bg-tea rounded-full w-8 h-8 p-1 hover:bg-deep-tea duration-300"
+                          href="https://react-dance-studio-app-amyrchen.vercel.app/"
+                          target="blank"
+                        >
+                          <img src="../assets/open-link.svg" alt="open-link" />
+                        </a>
+                        {/* GITHUB LINK*/}
+                        <a
+                          className="bg-tea rounded-full w-8 h-8 p-1 ml-3 hover:bg-deep-tea duration-300"
+                          href="https://github.com/AmyRChen/React-Dance-Studio"
+                          target="blank"
+                        >
+                          <img src="../assets/github.png" alt="open-link" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* project2 */}
                 <div class="p-4 max-w-xs hover:translate-y-[-5px] duration-300">
                   <div class="flex rounded-lg h-full bg-deep-white p-8 flex-col">
                     <div class="flex items-center mb-3 text-black text-lg font-medium font-ubuntu">
@@ -284,7 +320,7 @@ const SideProjects = () => {
                     </div>
                   </div>
                 </div>
-                {/* project2 */}
+                {/* project3 */}
                 <div class="p-4 max-w-xs hover:translate-y-[-5px] duration-300">
                   <div class="flex rounded-lg h-full bg-deep-white p-8 flex-col">
                     <div class="flex items-center mb-3 text-black text-lg font-medium font-ubuntu">
@@ -309,7 +345,7 @@ const SideProjects = () => {
                     </div>
                   </div>
                 </div>
-                {/* project3 */}
+                {/* project4 */}
                 <div class="p-4 max-w-xs hover:translate-y-[-5px] duration-300">
                   <div class="flex rounded-lg h-full bg-deep-white p-8 flex-col">
                     <div class="flex items-center mb-3 text-black text-lg font-medium font-ubuntu">
@@ -345,7 +381,7 @@ const SideProjects = () => {
                   </div>
                 </div>
 
-                {/* project4 */}
+                {/* project5 */}
                 <div class="p-4 max-w-xs hover:translate-y-[-5px] duration-300">
                   <div class="flex rounded-lg h-full bg-deep-white p-8 flex-col">
                     <div class="flex items-center mb-3 text-black text-lg font-medium font-ubuntu">
