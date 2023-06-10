@@ -36,8 +36,8 @@ const Landing = () => {
             background, specializing in building web applications.
           </div>
           <div className="font-ubuntu text-grey text-base w-2/3">
-            Currently, I'm seeking a full-time job as a software engineer or web
-            developer.
+            Currently, I'm seeking a full-time job as a software engineer, web
+            developer or any other IT field.
           </div>
         </motion.div>
       </div>
