@@ -72,7 +72,7 @@ const SideProjects = () => {
                 </a>
               </div>
               <div className="mb-3 text-2xl font-semibold">
-                Socail Media Application
+                Social Media Application
               </div>
               <div className="mb-3 ">
                 This is a user-friendly, responsive social media application.
